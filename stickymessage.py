@@ -22,10 +22,10 @@ async def on_message(message):
         await i.delete()
     else:
         try:
-            if message.channel.id == 882257233872814133:
+            if message.channel.id == 882257233872814133: # channel id where the message should be sent( once the bot is online send a message in that channel and it'll start)
                 embed = discord.Embed()
                 
-                embed.set_footer(text="𝙊𝙣𝙡𝙮 𝙪𝙥𝙡𝙤𝙖𝙙 𝙢𝙚𝙙𝙞𝙖 𝙝𝙚𝙧𝙚 𝙤𝙩𝙝𝙚𝙧𝙬𝙞𝙨𝙚 𝙮𝙤𝙪𝙧 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙬𝙞𝙡𝙡 𝙗𝙚 𝙙𝙚𝙡𝙚𝙩𝙚𝙙")
+                embed.set_footer(text="Insert Text Here!")
                 mes = await message.channel.send(embed=embed)
                 ded.clear()
                 ded.append(mes)
